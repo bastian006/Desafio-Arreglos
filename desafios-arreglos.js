@@ -71,6 +71,20 @@ function reverse(arr) {
 var result = reverse(["a", "b", "c", "d", "e"]);
 console.log(result); // esperamos de vuelta ["e", "d", "c", "b", "a"]
 
+//Desafio 5
 
+function fibonacciArray(n) {
+    var fibArr = [0, 1];
+
+    while (fibArr.length < n) {
+        var nextFib = fibArr[fibArr.length - 1] + fibArr[fibArr.length - 2];
+        fibArr.push(nextFib);
+    }
+
+    return fibArr;
+}
+
+var result = fibonacciArray(10);
+console.log(result);
 
 
